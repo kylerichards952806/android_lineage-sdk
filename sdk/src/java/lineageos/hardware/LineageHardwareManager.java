@@ -271,52 +271,52 @@ public final class LineageHardwareManager {
     private IBinder getAIDLService(int feature) {
         switch (feature) {
             case FEATURE_ADAPTIVE_BACKLIGHT:
-                return ServiceManager.waitForDeclaredService(
+                return ServiceManager.getService(
                         IAdaptiveBacklight.DESCRIPTOR + "/default");
             case FEATURE_ANTI_FLICKER:
-                return ServiceManager.waitForDeclaredService(
+                return ServiceManager.getService(
                         IAntiFlicker.DESCRIPTOR + "/default");
             case FEATURE_AUTO_CONTRAST:
-                return ServiceManager.waitForDeclaredService(
+                return ServiceManager.getService(
                         IAutoContrast.DESCRIPTOR + "/default");
             case FEATURE_COLOR_BALANCE:
-                return ServiceManager.waitForDeclaredService(
+                return ServiceManager.getService(
                         IColorBalance.DESCRIPTOR + "/default");
             case FEATURE_COLOR_ENHANCEMENT:
-                return ServiceManager.waitForDeclaredService(
+                return ServiceManager.getService(
                         IColorEnhancement.DESCRIPTOR + "/default");
             case FEATURE_DISPLAY_COLOR_CALIBRATION:
-                return ServiceManager.waitForDeclaredService(
+                return ServiceManager.getService(
                         IDisplayColorCalibration.DESCRIPTOR + "/default");
             case FEATURE_DISPLAY_MODES:
-                return ServiceManager.waitForDeclaredService(
+                return ServiceManager.getService(
                         IDisplayModes.DESCRIPTOR + "/default");
             case FEATURE_HIGH_TOUCH_POLLING_RATE:
-                return ServiceManager.waitForDeclaredService(
+                return ServiceManager.getService(
                         IHighTouchPollingRate.DESCRIPTOR + "/default");
             case FEATURE_HIGH_TOUCH_SENSITIVITY:
-                return ServiceManager.waitForDeclaredService(
+                return ServiceManager.getService(
                         IGloveMode.DESCRIPTOR + "/default");
             case FEATURE_KEY_DISABLE:
-                return ServiceManager.waitForDeclaredService(
+                return ServiceManager.getService(
                         IKeyDisabler.DESCRIPTOR + "/default");
             case FEATURE_KEY_SWAP:
-                return ServiceManager.waitForDeclaredService(
+                return ServiceManager.getService(
                         IKeySwapper.DESCRIPTOR + "/default");
             case FEATURE_PICTURE_ADJUSTMENT:
-                return ServiceManager.waitForDeclaredService(
+                return ServiceManager.getService(
                         IPictureAdjustment.DESCRIPTOR + "/default");
             case FEATURE_READING_ENHANCEMENT:
-                return ServiceManager.waitForDeclaredService(
+                return ServiceManager.getService(
                         IReadingEnhancement.DESCRIPTOR + "/default");
             case FEATURE_SUNLIGHT_ENHANCEMENT:
-                return ServiceManager.waitForDeclaredService(
+                return ServiceManager.getService(
                         ISunlightEnhancement.DESCRIPTOR + "/default");
             case FEATURE_TOUCH_HOVERING:
-                return ServiceManager.waitForDeclaredService(
+                return ServiceManager.getService(
                         IStylusMode.DESCRIPTOR + "/default");
             case FEATURE_TOUCHSCREEN_GESTURES:
-                return ServiceManager.waitForDeclaredService(
+                return ServiceManager.getService(
                         ITouchscreenGesture.DESCRIPTOR + "/default");
         }
         return null;
